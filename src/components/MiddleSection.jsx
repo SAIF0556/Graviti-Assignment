@@ -12,7 +12,8 @@ function MiddleSection() {
   const [map, setMap] = useState(/** @type google.maps.Map */ (null))
 
   const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: import.meta.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+    googleMapsApiKey:
+      'https://cdn.jsdelivr.net/gh/somanchiu/Keyless-Google-Maps-API@v6.6/mapsJavaScriptAPI.js',
     libraries: ['places'],
   })
 
